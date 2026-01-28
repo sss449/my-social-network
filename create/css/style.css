@@ -1,0 +1,168 @@
+/* Общие исправления */
+body {
+    background-color: rgb(14, 14, 14);
+    color: white;
+    padding: 20px;
+    font-family: sans-serif; /* Добавим единый шрифт */
+}
+
+/* Общий стиль теней (исправлен синтаксис) */
+.shadow {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); /* Прозрачность через rgba */
+}
+
+/* Кнопка загрузки фото */
+#photo-upload {
+    display: block;
+    margin: 40px auto 20px;
+    width: 90%;
+    max-width: 300px;
+    padding: 12px;
+    background: #323232;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #444;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+#photo-upload:hover {
+    background: #3a3a3a;
+    transform: translateY(-2px);
+}
+
+/* Поле описания */
+#o {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 300px;
+    height: 80px;
+    padding: 12px;
+    background: #323232;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #444;
+    resize: vertical;
+    font-family: inherit;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Выбор времени поста */
+.time-select {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 300px;
+    padding: 12px;
+    background: #323232;
+    color: white;
+    border: 2px solid #444;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Секция буста */
+.boost-section {
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    border: 2px solid #333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.boost-label {
+    display: block;
+    color: #ffd700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.boost-select {
+    width: 100%;
+    padding: 14px;
+    background: #2a2a2a;
+    color: white;
+    border: 2px solid #555;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boost-select option {
+    background: #2a2a2a;
+    color: white;
+    padding: 12px;
+}
+
+/* Кнопка "Создать пост" */
+#go {
+    display: block;
+    margin: 40px auto 60px;
+    width: 90%;
+    max-width: 200px;
+    padding: 15px;
+    background: linear-gradient(135deg, #323232, #555);
+    color: white;
+    border-radius: 100px;
+    border: 2px solid #444;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+#go:hover {
+    background: linear-gradient(135deg, #555, #323232);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Зачёркнутая цена */
+s {
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+/* Улучшение скроллбара */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 5px;
+}
+/* Кнопка "Назад" */
+.back-button {
+    position: fixed; /* Фиксированное положение */
+    top: 20px;
+    left: 20px;
+    padding: 10px 16px;
+    background: rgba(50, 50, 50, 0.9); /* Полупрозрачный тёмный фон */
+    color: white;
+    text-decoration: none; /* Убираем подчёркивание ссылки */
+    border-radius: 8px;
+    border: 1px solid #666;
+    font-size: 16px;
+    z-index: 1000; /* Чтобы была поверх других элементов */
+    transition: all 0.2s;
+}
+
+.back-button:hover {
+    background: rgba(70, 70, 70, 0.95);
+    transform: translateX(-3px); /* Лёгкое смещение влево при наведении */
+}

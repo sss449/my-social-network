@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post.site</title>
+</head>
+<body>
+    <!-- Кнопка "назад" - в левом верхнем углу -->
+<a href="index.html" class="back-button">Назад</a>
+    <link rel="stylesheet" href="../css/style.css">
+    <div class="upload-container">
+    <label for="photo-upload"></label>
+<input type="file" id="photo-upload" accept="image/*">
+<textarea name="photo" id="o" placeholder="Описание"></textarea>
+
+<select id="post-time" class="time-select">
+    <option value="1">1 час</option>
+    <option value="3">3 часа</option>
+    <option value="10">10 часов</option>
+    <option value="24">1 день</option>
+    <option value="72">3 дня</option>
+    <option value="240">10 дней</option>
+    <option value="480">20 дней</option>
+</select>
+<div class="boost-section">
+    <label class="boost-label">⚡ Буст поста:</label>
+    
+    <select id="boost-time" class="boost-select">
+        <option value="0">Без буста</option>
+        <option value="99|1">1 час → 99₽</option>
+        <option value="297|3">3 часа → 297₽</option>
+        <option value="891|10">10 часов → ̶9̶9̶0̶₽̶ /891₽ (−10%)</option>
+        <option value="2020|24">1 день →  ̶2̶ ̶3̶7̶6̶₽̶ /  2 020₽ (−15%)</option>
+        <option value="5702|72">3 дня →  ̶7̶ ̶1̶2̶8̶₽̶ / 5 702₽ (−20%)</option>
+        <option value="16632|240">10 дней →  ̶2̶3̶ ̶7̶6̶0̶₽̶ /  16 632₽ (−30%)</option>
+        <option value="28512|480">20 дней →  ̶4̶7̶ ̶5̶2̶0̶₽̶ /  28 512₽ (−40%)</option>
+    </select>
+    
+</div>
+<button id="go">Создать пост</button>
+
+
+</body>
+</html>
