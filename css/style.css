@@ -17,7 +17,7 @@
     border: 3px solid hsl(0, 0%, 20%);
     border-radius: 10px;
     background-color: #323232;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.796);
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     
 }
@@ -36,7 +36,7 @@
     border: none;
     border-radius: 50%; /* 50% вместо 100px для идеального круга на любом размере */
     cursor: pointer;  /*курсор меняеться на "руку" при наведении*/
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.768);
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
     transition: transform 0.2s; /* планая анимация transform*/
     display: flex; /* Чтобы текст "+" был точно по центру */
     align-items: center;
