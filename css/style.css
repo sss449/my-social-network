@@ -1,11 +1,52 @@
 
-#a {
-    position: absolute;
-    top: 40px;
-    left: 670px;
+/* Сброс отступов для всей страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.b {
-   position: absolute;
-   top: 620px;
-   left: 1300px;
+
+/* Поле поиска */
+#a {
+    display: block;
+    width: 60%;
+    max-width: 200px;
+    margin: 3vh auto 70vh; /* 5% сверху, 3% снизу */
+    padding: 0.5vh;
+    font-size: 16px;
+    border: 3px solid hsl(0, 0%, 20%);
+    border-radius: 10px;
+    background-color: #323232;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.796);
+    
+}
+
+/* Кнопка создания поста */
+.b { 
+    position: fixed; /* Фиксируем кнопку на экране */
+    bottom: 20px;    /* 20px от нижнего края */
+    right: 50px;     /* 20px от правого края */
+    width: 50px;     /*ширина кнопки*/
+    height: 50px;    /* Делаем высоту равной ширине для идеального круга */
+    padding: 0;      /* Убираем padding, иначе круг расплющится */
+    font-size: 18px;
+    background: linear-gradient(135deg, #323232 0%, #323232 100%); /*черный градиент*/
+    color: rgb(255, 255, 255);  /*белый текст*/
+    border: none;
+    border-radius: 50%; /* 50% вместо 100px для идеального круга на любом размере */
+    cursor: pointer;  /*курсор меняеться на "руку" при наведении*/
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.768);
+    transition: transform 0.2s; /* планая анимация transform*/
+    display: flex; /* Чтобы текст "+" был точно по центру */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Эффект при нажатии */
+.b:hover {
+    transform: scale(1.05); /* увеличивает кнопку на 10% при наведении*/
+}
+
+body {
+    background-color: rgb(14, 14, 14);
 }
