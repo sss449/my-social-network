@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(14, 14, 14);
+}
+.back-button {
+    position: fixed; /* Фиксированное положение */
+    top: 20px;
+    left: 20px;
+    padding: 10px 16px;
+    background: rgba(50, 50, 50, 0.9); /* Полупрозрачный тёмный фон */
+    color: white;
+    text-decoration: none; /* Убираем подчёркивание ссылки */
+    border-radius: 8px;
+    border: 1px solid #666;
+    font-size: 16px;
+    z-index: 1000; /* Чтобы была поверх других элементов */
+    transition: all 0.2s;
+}
+
+.back-button:hover {
+    background: rgba(70, 70, 70, 0.95);
+    transform: translateX(-3px); /* Лёгкое смещение влево при наведении */
+}
+#post {
+    color: aliceblue;
+    position: fixed;
+    
+    
+}
+#post {
+    position: fixed;
+    /* Центрирование по горизонтали */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* Адаптивная ширина */
+    width: 90%; /* На мобильных займет 90% ширины */
+    max-width: 500px; /* Но не более 500px на ПК */
+    width: 500px;
+    height: 50px;
+    padding: 0;
+    top: 300px;
+    text-align: center;
+    
+    /* Для вертикального центрирования текста */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+}

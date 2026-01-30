@@ -17,7 +17,7 @@
     border: 3px solid hsl(0, 0%, 20%);
     border-radius: 10px;
     background-color: #323232;
-    box-shadow: 0 10px 15px rgb(0, 0, 0);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.786);
     color: rgb(255, 255, 255);
    
     
@@ -27,7 +27,7 @@
 .b { 
     position: fixed; /* Фиксируем кнопку на экране */
     bottom: 20px;    /* 20px от нижнего края */
-    right: 50px;     /* 20px от правого края */
+    right: 30px;     /* 20px от правого края */
     width: 50px;     /*ширина кнопки*/
     height: 50px;    /* Делаем высоту равной ширине для идеального круга */
     padding: 0;      /* Убираем padding, иначе круг расплющится */
@@ -37,7 +37,7 @@
     border: none;
     border-radius: 50%; /* 50% вместо 100px для идеального круга на любом размере */
     cursor: pointer;  /*курсор меняеться на "руку" при наведении*/
-    box-shadow: 0 10px 15px rgb(0, 0, 0);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.778);
     transition: transform 0.2s; /* планая анимация transform*/
     display: flex; /* Чтобы текст "+" был точно по центру */
     align-items: center;
@@ -55,3 +55,24 @@
 body {
     background-color: rgb(14, 14, 14);
 }
+
+#profile {
+
+   position: fixed;
+   right: 30px;
+   width: 50px;
+   height: 50px;
+   padding: 0%;
+   top: 20px;
+   text-align: center;
+   background: linear-gradient(135deg, #323232 0%, #323232 100%);
+   color: aliceblue;
+   font-size: 18px;
+   border-radius: 50%;
+   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.778);
+    transition: transform 0.2s;
+}
+#profile:hover {
+     transform: scale(1.15); /* увеличивает кнопку на 10% при наведении*/
+}
+
